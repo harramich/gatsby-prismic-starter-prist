@@ -53,5 +53,12 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    `gatsby-plugin-sharp`,
+    {
+        resolve: 'gatsby-source-prismic-graphql',
+        options: {
+            repositoryName: 'gccc', // (REQUIRED, replace with your own)
+        }
+    },
   ],
 }
